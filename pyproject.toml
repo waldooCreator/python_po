@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "api-inventario"
+version = "0.1.0"
+description = "API REST de gestión de inventario con pipeline completo de testing"
+authors = ["Jann <jann@example.com>"]
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0"
+flask-sqlalchemy = "^3.1"
+flask-paginate = "^2023.10.4"
+python-dotenv = "^1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+pytest-mock = "^3.14"
+coverage = "^7.4"
+behave = "^1.2"
+locust = "^2.29"
+requests = "^2.32"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
